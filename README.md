@@ -62,6 +62,12 @@ Parameter `keep-going` tells `find()` to not stop finding files
 on errors such as 'Access is denied', but rather ignore the errors
 and keep going.
 
+**follow-symlinks**
+
+Paramenter `follow-symlinks` tells `find()` whether or not it should 
+follow symlinks during recursive searches. This will still return
+symlinks in its results, if the type parameter allows.
+
 **Perl 5's File::Find**
 
 Please note, that this module is not trying to be the verbatim port of
